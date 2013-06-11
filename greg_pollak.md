@@ -10,14 +10,14 @@ Bring the client closer to the team. We devs are not good at communicating. Ever
 
 2. Be mindful of your engineering background.
 
-Listening to Ideas. Diagnosing and telling them that idea sucks kills the collaboration. Diagnosis = Criticism. 
-practice "Yes, and" when brainstorming.
+Listen to Ideas. Diagnosing and telling them that their idea sucks kills collaboration. Diagnosis = Criticism. 
+Practice saying "Yes, and" when brainstorming.
 
 Give your full attention to somebody when they talk. 
 
 3. Software Development is an art form (kinda.. is a craft).
 
-our job is to make beautiful work. Consulting is usually more challenging because you scratch somebody elses itch.
+Our job is to make beautiful work. Consulting is usually more challenging because you scratch somebody elses itch.
 
 4. Learn how to delegate
 
