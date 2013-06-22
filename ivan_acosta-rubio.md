@@ -1,30 +1,34 @@
 Ruby Motion
-by Ivan Acosta-Rubio
+=========
+by Ivan Acosta-Rubio from Software Criollo
+---------
 
-Es un conjunto de herramientas que permiten desarrollar par ios y osx usando ruby
+They used Ruby Motion for coding mealsapp. More information of the app at http://mealsapp.com
 
-Ruby code -> Machine code
+Ruby Motion is a set of tools that allow to develop for iOS and OsX using Ruby
 
-Objective-C imaginese utilizar algo que ha sido desarrollado por 25 anios.
+RubyMotion transforms ruby code to machine code.
 
-Foundation Framework es necesario aprender para no cometer errores.
+"Imagine using Objective-C which has been on development for 25 years"
 
-Interesting:
-  Teacup
-  Pixate - CSS para iOS y Android.
-  JoyBox - wrapper de 2D
-  Helu - In App Purchases. Disclaimer: Ivan wrote it.
+You need to know Foundation Framework to avoid mistakes while coding using RubyMotion.
 
-OO puede esconderte varias cosas.
-rake debug para debuggear. bt es un comando muy usado
+####Interesting software
+  
+  * Teacup
+  * Pixate - CSS for iOS y Android.
+  * JoyBox - Wrapper de 2D
+  * Helu - In App Purchases. Disclaimer: Ivan wrote it.
 
-CocoaPods RubyGems de Obj-C
+You can now do rake debug when using RubyMotion.
 
-RevealApp - You can check all the views. Looks like a very cool 3D. It is BETA and FREE.
+####Other tools:
 
-Parse - Easy push notifications.
+  * RevealApp - You can check all the views. Looks like a very cool 3D. It is BETA and FREE.
 
-Softwarecriollo.com
+  * Parse - Easy push notifications.
+
+
 
 
 
