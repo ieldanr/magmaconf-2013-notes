@@ -1,58 +1,56 @@
-Rails at higher scale
+Scaling Wanelo 100x
+======
+by Eric Saxby from Wanelo
+------
 
-Wanelo
+They scaled their rails app to do 200K requests per minute (RPM) in six months. The slides talk about how they did it.
 
-Tracking saturation and utilization.
-They use new relic.
+Here are the slides http://building.wanelo.com/
 
-Watch queries that are the most often used. This could go into stories.
-Average response latency increases over time.
+####New Relic
+For tracking saturation and utilization.
 
-Step 1. Cache everything.
-  But cache invalidation!
+Watch queries that are the most often used. This could go into stories. Average response latency increases over time.
+
+####Cache everything.
+
+But watch out for cache invalidation!
 
 Cache sweepers worked for them.
+
 Fragments can be shared between pages.
 
 Cache = less queries into database.
 
-Still with cache still Harddrive 100% busy
+They found out that still with cache the HD was always busy at a 100%
 
-Counts are problematic. counter_cache.
-But there are DEADLOCK errors, which could break your DB.
-They put counter cache in a queue with a delayed job. Deduplicate delayed jobs.
+They also do counter caches!
 
-Pagination doing counts!  They did a monkey patch on Kaminari so that it gets directly the counter.
-
-How do we really know what rails is actually doing?
+####How do they really know what rails is actually doing?
 * ruby-prof
-    showed URLS generation is very slow.
-* pilfer
+    
+  They learned using ruby-prof that URLS generation was very slow.
 
-Removing RABL
-inefficient :to_json
+####What happens when you data grows larger than a single DB
 
-rendering JSON partials should hash.merge!
+You start to do a Service Oriented Application.
 
-What happens when you data grows larger than a single DB
-Service Oriented Application.
+One of the lessons they give is to always iterate. Never try to fix everything with one deploy.
 
-You should not try to improve it with one deploy. But iterate on it.
-Do tests.
-
-Takeaways.
+####Takeaways
 
 Choose technologies that are easy to operate and monitor.
+
 POSTGRES > mysql
 
 Assume that data should be tracked, even if you don't understand the relevance.
 
 Small iterative performance improvements can have massive payoff over time.
 
-Uitlization:
-  Reads easier to scale than writes. Read/write splitting, caching.
+Reads easier to scale than writes. Read/write splitting, caching.
 
 When writes become a bottle neck then services is one of the answers.
+
 Microsecond delays can reduce load, depends on application.
 
 
