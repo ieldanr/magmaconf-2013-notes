@@ -1,6 +1,6 @@
 Sinatra in 6 lines, or How to do crazy stuff with Ruby.
 
-Sinatra!
+Comedy time:
 
-Yusuke Endoh
+https://speakerdeck.com/rkh/magmaconf-2013-crazy-ruby
 
