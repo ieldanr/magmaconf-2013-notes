@@ -1,41 +1,54 @@
 Inter-Application communication using secure API's
+========
 by Jon Dean
+--------
 
 Code interfaces
 Web APIs
 
-Multiple Rails applications that need to share functionality.
-Legacy admin application written in Django
+He had Multiple Rails applications that need to share functionality.
 
-Set up a restful API or do Gems. They made lots of gems to communicate :/ OMG
+There is two ways to communicate between the systems:
 
-Sharing code via a GEMS
+* Set up a restful API 
+* Gems 
+ 
+At first they made lots of gems to communicate :/ OMG
 
-PROS
-  Easy
-  Abstract the work through code-level APIs
-  Can cost less money
-  No network latency
-  No need to implement authentication
+When there are more systems communicating with each other, that means doing
+many many gems! (which is bad...)
 
-CONS
-Need to update and deploy all applications when the gem changes.
-Lots of code churn/branches
-Internal improvements require a change in all applications using it.
+Gems
+----
 
+####PROS
+  * Easy
+  * Abstract the work through code-level APIs
+  * Can cost less money
+  * No network latency
+  * No need to implement authentication
 
-PROS OF SHARING CODE VIA API SERVICE
-Internal changes have no affect on client apps
-Can independently scale the resource that deals with payments
-Can add clients in any language to your systems
+####CONS
+* Need to update and deploy all applications when the gem changes.
+* Lots of code churn/branches
+* Internal improvements require a change in all applications using it.
 
-CONS
-More complex
-Costs money to run an additional application
-Network latency
-Handling timeouts and other service unavailability issues
-Also need to implement an authentication layer
+API Service
+---
+####PROS
+* Internal changes have no affect on client apps
+* Can independently scale the resource that deals with payments
+* Can add clients in any language to your systems
 
-Here is the presentation: jonathandean.github.io/magmaconf-2013-inter-app-api
+####CONS
+* More complex
+* Costs money to run an additional application
+* Network latency
+* Handling timeouts and other service unavailability issues
+* Also need to implement an authentication layer
+
+The presentation with an awesome example of versioning:
+
+https://github.com/jonathandean/magmaconf-2013-inter-app-api
 
 
