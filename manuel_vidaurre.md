@@ -1,12 +1,5 @@
-Irracionalidad Predecible
+Predictable Irracionality
 
-Superman vs Homer Simpson
+This is a talk based on coursera classes!
 
-Mr. Spock vs Homer Simpson
 
-Behavioral Economics.
-
-Somos mas como homero simpson. No racionales.
-
-Taken from a class in coursera
- 
